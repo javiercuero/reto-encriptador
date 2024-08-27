@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de Textos</title>
+    
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+        <!-- CSS Stylesheet -->
+        <link rel="stylesheet" href="assets/style/style.css">
+    </head>
+    
+    <body>
+        <header>
+            <img src="assets/img/alura-logo.png" alt="Logo de Alura">
+        </header>
+    
+        <main>
+            <form class="seccion_form">
+                <textarea class="input_form" name="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                
+                <div class="btn__container">
+                </div>
+                <div class="mensaje_alerta">
+                    <img src="assets/img/señal.png" alt="Icono de alerta">
+                    <span>Solo letras minúsculas y sin acentos</span>
+                </div>
+                
+                <div class="contenedor">
+                    <input class="boton_a" type="submit" value="Encriptar">
+                    <input class="boton_b" type="submit" value="Desencriptar">
+                    <input class="boton_e hidden" type="submit" value="Pegar"> <!--Queda pendiente de seguir desarrollando, meter esta funcion-->
+                    <input class="boton_f hidden" type="submit" value="Resetear"> <!--Queda pendiente de seguir desarrollando, meter esta funcion-->
+                </div>
+                    </div>
+                </div>
+            </form>
+    
+            <aside class="resultado">
+                <img src="assets/img/niño.png" alt="Niño" class="resultado_niño">
+                <div class="loader hidden"></div>
+                <div class="mensaje_contenedor">
+                    <h3 class="resultado_titulo">Ningún mensaje fue encontrado</h3>
+                    <p class="resultado_texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <button class="boton_c hidden">
+                        copiar
+                    </button>
+                </div>
+            </aside>
+        </main>
+        <script src="assets/app.js"></script>
+    </body>
+    <footer class="footer">
+        <p>
+            Desarrollado por Javier Cuero
+        </p>
+    </footer>
+    </html>
+    

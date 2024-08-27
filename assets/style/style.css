@@ -1,0 +1,213 @@
+:root{
+    --blue1: #0A3871;
+    --white1:#F3F5FC;
+    --blue2:#D8DFE8;
+    --fuente-inter: "Inter", sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+   
+    background-color: var(--white1);
+    font-family:var(--fuente-inter);
+    padding: 10% 10% 0% 10%;
+    
+}
+header{
+    margin-bottom: 10rem;
+    width: 20%;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header img{
+    width: 120px;
+    height: 48px;
+    
+}
+.seccion_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70dvh;
+}
+
+.input_form{
+    width: 100%;
+    max-width: 577px;
+    height: 64dvh;
+    border-color: transparent;
+    background: transparent;
+    outline: none;
+    font-family: var(--fuente-inter);
+    font-size: 3.2rem;
+    color: var(--blue1);
+    margin-bottom: 3rem;
+     
+
+}
+
+::placeholder{color: var(--blue1);}
+
+.mensaje_alerta{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+        
+}
+.contenedor{
+   display: flex;
+   gap:2rem;
+   flex-wrap: wrap; 
+}
+.boton_a{
+    background: var(--blue1);
+    color: white;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    width: 328px;
+    height: 67;
+    border-radius: 24px;
+    border: 1px solid var(--blue1);
+    font-weight: 500;
+
+}
+.boton_b{
+    background: transparent;
+    color: VAR(--blue1);
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    width: 328px;
+    height: 67;
+    border-radius: 24px;
+    border: 1px solid var(--blue1);
+    font-weight: 500;
+
+}
+
+.boton_c{
+    background: transparent;
+    color: VAR(--blue1);
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    width: 328px;
+    height: 67;
+    border-radius: 24px;
+    border: 1px solid var(--blue1);
+    font-weight: 500;
+
+}
+
+.boton_e{
+    background: transparent;
+    color: VAR(--blue1);
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    width: 328px;
+    height: 67;
+    border-radius: 24px;
+    border: 1px solid var(--blue1);
+    font-weight: 500;
+}
+
+.boton_f{
+    background: var(--blue1);
+    color: white;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    width: 328px;
+    height: 67;
+    border-radius: 24px;
+    border: 1px solid var(--blue1);
+    font-weight: 500;
+
+}
+.resultado{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    height: 90dvh;
+    border-radius: 32px;
+    max-width: 40rem;
+    width: 100%;
+    
+}
+
+.resultado_niño{
+    display:block;
+}
+.hidden{
+    display: none;
+
+}
+
+@media screen and (max-width:768px){
+    main{
+        flex-direction: column;
+    }
+    .contenedor{
+        justify-content: center;
+    }
+    .resultado{
+        height: auto;
+        max-width: 624px;
+        margin-top: 2rem;
+        min-height: 186px;
+    }
+    .resultado_niño{
+        display: none;
+}
+header img{
+    width: 50px;
+    height: 31px;
+}
+}
+
+/* En HTML corresponde a : <div class="loader"></div> */
+.loader {
+    width: 120px;
+    height: 22px;
+    border-radius: 40px;
+    color: var(--blue1);
+    border: 2px solid;
+    position: relative;
+    overflow: hidden;
+  }
+  .loader::before {
+    content: "";
+    position: absolute;
+    margin: 2px;
+    width: 14px;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    border-radius: inherit;
+    background: currentColor;
+    box-shadow: -10px 0 12px 3px currentColor;
+    clip-path: polygon(0 5%, 100% 0,100% 100%,0 95%,-30px 50%);
+    animation: l14 1s infinite linear;
+  }
+  @keyframes l14 {
+    100% {left: calc(100% + 20px)}
+  }
+
+  .footer{
+    background-color: var(--blue1);
+    padding: 0.1px;
+    color: var(--white1);
+    text-align: center;
+    font-family: var(--fuente-inter);
+    font-size: 10px;
+    font-weight: 300;
+  }
